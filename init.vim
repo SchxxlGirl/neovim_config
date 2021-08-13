@@ -18,6 +18,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'blueyed/vim-diminactive'
 Plug 'sheerun/vim-polyglot'
 Plug 'rakr/vim-two-firewatch'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -28,6 +30,10 @@ tnoremap <Esc> <C-\><C-n>
 set background=light
 let g:two_firewatch_italics=1
 colo two-firewatch
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='twofirewatch'
+set laststatus=2
 
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
